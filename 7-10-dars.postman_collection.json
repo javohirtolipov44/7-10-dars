@@ -1,0 +1,88 @@
+{
+	"info": {
+		"_postman_id": "93b16453-eb1c-4696-9cc6-94e7daf5fa27",
+		"name": "7-10-dars",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "14374179"
+	},
+	"item": [
+		{
+			"name": "create_user",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"fullName\": \"Alisher Navoiy\",\r\n  \"email\": \"alisher@example.com\",\r\n  \"password\": \"securePassword123\",\r\n  \"role\": \"student\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:4000/api/users"
+			},
+			"response": []
+		},
+		{
+			"name": "all_users",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "http://localhost:4000/api/users"
+			},
+			"response": []
+		},
+		{
+			"name": "login",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"email\": \"alisher@example.com\",\r\n  \"password\": \"securePassword123\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:4000/api/auth/login"
+			},
+			"response": []
+		},
+		{
+			"name": "profile_user",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "add_courses",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "all_courses",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "enroll",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": "http://localhost:4000/api/courses/3/enroll"
+			},
+			"response": []
+		}
+	]
+}
